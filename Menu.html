@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		body{
+			background-image: url(https://images.pexels.com/photos/616401/pexels-photo-616401.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+		div{
+			float: center;
+		}
+		table{
+			text-align: center;
+			border-collapse: separate;
+			margin-left: auto; 
+    		margin-right: auto;
+    	}
+    	th,td{
+
+    	}
+    	button{
+			 background:none;
+		     border:none;
+		     margin:0;
+		     padding:0;
+		     cursor: pointer;
+		}
+		.bottom{
+			background:none;
+		     border:none;
+		     margin:0;
+		     padding:0;
+		     cursor: pointer;
+		     color:red;
+		}
+		.back{
+			background:none;
+		     border:none;
+		     margin:0;
+		     padding:0;
+		     cursor: pointer;
+		     color:blue;
+		}
+	</style>
+</head>
+<body>
+	<marquee direction="left">
+		<br><br>
+		<h2 style="color: orange;">Select the items from the menu</h2></marquee>
+	<div><br>
+		<table cellpadding="6">
+			<tr>
+				<th><h1>Starters</h1></th>
+				<th><h1>Fried Rice</h1></th>
+				<th><h1>Biryani</h1></th>
+				<th><h1>Breads</h1></th>
+				<th><h1>Curries</h1></th>
+
+			</tr>
+			<tr>
+				<td><button onclick="callme()"><h2>Veg Manchurian</h2></button></td>
+				<td><button onclick="callme()"><h2>Veg Fried rice</h2></button></td>
+				<td><button onclick="callme()"><h2>Veg Biryani</h2></button></td>
+				<td><button onclick="callme()"><h2>Butter Naan</h2></button></td>
+				<td><button onclick="callme()"><h2>Methi Chaman</h2></button></td>
+			</tr>
+			<tr>
+				<td><button onclick="callme()"><h2>Chilli Paneer</h2></button></td>
+				<td><button onclick="callme()"><h2>Schezwan Fried rice</h2></button></td>
+				<td><button onclick="callme()"><h2>Paneer Biryani</h2></button></td>
+				<td><button onclick="callme()"><h2>Garlic Naan</h2></button></td>
+				<td><button onclick="callme()"><h2>Paneer Butter Masala</h2></button></td>
+			</tr>
+			<tr>
+				<td><button onclick="callme()"><h2>Chilli Babycorn</h2></button></td>
+				<td><button onclick="callme()"><h2>Manchirian Fried Rice</h2></button></td>
+				<td><button onclick="callme()"><h2>Mushroom Biryani</h2></button></td>
+				<td><button onclick="callme()"><h2>Pulka</h2></button></td>
+				<td><button onclick="callme()"><h2>Mixed Veg Curry</h2></button></td>
+			</tr>
+			<tr>
+				<td><button onclick="callme()"><h2>Crispy Babycorn</h2></button></td>
+				<td><button onclick="callme()"><h2>Tomato rice</h2></button></td>
+				<td><button onclick="callme()"><h2>Shahi Paneer Biryani</h2></button></td>
+				<td><button onclick="callme()"><h2> Plain Naan</h2></button></td>
+				<td><button onclick="callme()"><h2>Kaju Tomato</h2></button></td>
+			</tr>
+			<tr>
+				<td><button onclick="callme()"><h2>Paneer 65</h2></button></td>
+				<td><button onclick="callme()"><h2>Lemon rice</h2></button></td>
+				<td><button onclick="callme()"><h2>Aloo Biryani</h2></button></td>
+				<td><button onclick="callme()"><h2>Parotta</h2></button></td>
+				<td><button onclick="callme()"><h2>Butter Masala</h2></button></td>
+			</tr>
+			<tr>
+				<td colspan="3">
+					<button class="bottom" onclick="alert('Your order was placed Successfully')"><h2>Place Order</h2></button>
+				</td>
+				<td colspan="2">
+					<button class="bottom"onclick="alert('Add more items to the cart')"><h2>Cancel</h2></button>
+				</td>
+			</tr>
+			<tr>
+				<td  colspan="5" align="center"><a href="Proj1.html" style="text-decoration: none;"><h2>Back</h2></a></td>
+			</tr>
+		</table>
+	</div>
+
+	<script type="text/javascript">
+		function callme(){
+			let text= "Can we add this item to the list of food items you ordered?";
+			if(confirm(text)==true){
+				alert("Item added to the cart");
+			}
+			else{
+				alert("select the item from the menu")
+			}
+
+		}
+	</script>
+
+</body>
+</html>

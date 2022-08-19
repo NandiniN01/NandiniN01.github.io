@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Book The Table</title>
+	
+	<style type="text/css">
+		body{
+			background-image: url(https://img.freepik.com/premium-photo/luxury-restaurant-dining-table-setting-with-empty-black-ceramic-plate-golden-fork-spoon_67155-23204.jpg?w=1060);
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+		h2{
+			text-align: right;
+			padding-right:  280px;
+		}
+		div{
+			float: right;
+		}
+		.tables{
+			padding-right: 20%;
+		}
+		table{
+			text-align: right;
+			border-collapse: separate;
+
+			
+		}
+		td{
+			padding-left: 60px;
+			padding-bottom: 5px;
+		}
+		
+		button{
+			background-color: lightblue;
+			border-radius: 10px;
+		}
+		button:hover{
+			cursor: pointer;
+
+		}
+		.back{
+			color: white;
+			background:none;
+		     border:none;
+		     cursor: pointer;
+		}
+		
+	</style>
+</head>
+<body>
+	<marquee direction="left">
+		<br>
+		<h2 style="color: orange;">Book a table from the list of available tables.</h2></marquee>
+	<h2>Here is the list of available tables</h2>
+	<div class="tables">
+		<table>
+			<tr>
+				<td><button onclick="callme()"><h4>Table No : 21</h4></button></td>
+				<td><button onclick="callme()"><h4>Table No : 22</h4></button></td>
+			</tr>
+			<tr>
+				<td><button onclick="callme()"><h4>Table No : 24</h4></button></td>
+				<td><button onclick="callme()"><h4>Table No : 25</h4></button></td>
+			</tr>
+			<tr>
+				<td><button onclick="callme()"><h4>Table No : 26</h4></button></td>
+				<td><button onclick="callme()"><h4>Table No : 28</h4></button></td>
+			</tr>
+			<tr>
+				<td><button onclick="callme()"><h4>Table No : 29</h4></button></td>
+				<td><button onclick="callme()"><h4>Table No : 31</h4></button></td>
+			</tr>
+			<tr>
+				<td><button onclick="callme()"><h4>Table No : 33</h4></button></td>
+				<td><button onclick="callme()"><h4>Table No : 34</h4></button></td>
+			</tr>
+			<tr>
+				<td><button onclick="callme()"><h4>Table No : 35</h4></button></td>
+				<td><button onclick="callme()"><h4>Table No : 36</h4></button></td>
+			</tr>
+			<tr>
+				<td><button onclick="callme()"><h4>Table No : 37</h4></button></td>
+				<td><button onclick="callme()"><h4>Table No : 38</h4></button></td>
+			</tr>
+			<tr>
+				<td><button onclick="callme()"><h4>Table No : 39</h4></button></td>
+				<td><button onclick="callme()"><h4>Table No : 40</h4></button></td>
+			</tr>
+			<tr>
+				<td  colspan="3" align="center"><button class="back" onclick="history.back()"><h2>Back</h2></button></td>
+			</tr>
+		</table>
+	</div>
+	
+	
+	<script type="text/javascript">
+		function callme(){
+			let text= "Can we reserve this table for you?";
+			if(confirm(text)==true){
+				alert("Your table is Reserved");
+			}
+			else{
+				alert("Choose a convenient table")
+			}
+
+		}
+	</script>
+
+
+</body>
+</html>
